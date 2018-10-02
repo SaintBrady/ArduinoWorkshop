@@ -54,6 +54,10 @@ In the first line, all we are doing is creating a variable named *ledPin* and as
   * ledPin (Same as before)
   * HIGH (Tells the module to switch ON, in our case lighting the LED. Can be HIGH or LOW)
 
+Before we compile and run our code, we still need to hardwire the arduino board itself.
+
+<img src="https://www.arduino.cc/en/uploads/Tutorial/ExampleCircuit_bb.png" alt="Blink Setup" width="250" /><img src="https://www.arduino.cc/en/uploads/Tutorial/ExampleCircuit_sch.png" alt="Blink Setup Diagram" width="250"/>
+
 Now we can compile our code in the web editor and run it...
 
 ### Goodbye World!
@@ -71,7 +75,9 @@ void loop()
 }
 ```
 We now have the ability to turn our LED on and off whenever we want, but what if we need it to blink?
+
 `delay(1000)`
+
 This will cause our code to delay by 1000ms or 1 second. Plugging this into our code we have:
 ```
 int ledPin = 13;
